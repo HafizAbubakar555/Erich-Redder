@@ -1,4 +1,4 @@
-//navbar start
+// //navbar start
 
 const navBtn = document.querySelector('.bar');
 const mainNav = document.querySelector('.all-nav');
@@ -14,39 +14,6 @@ navBtn.addEventListener("click" ,()=>{
         navBtn.innerHTML=`<i class="fa-solid fa-bars"></i>`
     }
 })
-//navbar end
-
-// carousel start
+// //navbar end
 
 
-const slider = document.querySelector('.main-content');
-const preBtn = document.querySelector('.left-btn');
-const nextBtn = document.querySelector('.right-btn');
-const content = document.querySelectorAll('.content-1')
-
-let slideridx=0;
-
-content[slideridx].classList.add("active");
-
-nextBtn.addEventListener('click',()=>{
-    content[slideridx].classList.remove('active');
-    if(slideridx===content.length-1){
-        slideridx=1;
-    }else{
-        slideridx++;
-    }
-    content[slideridx].classList.add("active");
-})
-
-preBtn.addEventListener('click',()=>{
-    content[slideridx].classList.remove('active');
-    if(slideridx===0){
-        slideridx= content.length-1;
-    }else{
-        slideridx--;
-    }
-    content[slideridx].classList.add("active");
-})
-
-
-// carousel end

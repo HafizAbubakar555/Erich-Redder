@@ -10,12 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+     
     <!-- link AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- link Css -->
      <link rel="stylesheet" href="style.css">
+     <!-- link slik slider -->
+     <link rel="stylesheet" href="./slick.css">
     <title>Erich Redder</title>
 </head>
 <body >
@@ -254,40 +256,44 @@
         <!-- section 6 end -->
 
 
-        <!-- section 7 start -->
-         <section class="sec-7" data-aos="fade-right">
+        <!-- Testimonals Sec Start -->
+        <section class="sec-7" data-aos="fade-right">
             <div class="sec-7-div">
                 <h1>Testimonials</h1>
-                <div class="main-content">
-                    <div class="content-1 active">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id, similique consectetur eum sunt cumque? Excepturi odio, quidem facilis provident sequi ipsam placeat aut cupiditate, esse magnam fugit in, eligendi sunt eveniet dignissimos nostrum! Nulla sit minima, qui nisi ipsa quas ab non quos facilis praesentium assumenda velit, eaque voluptatum! nisi ipsa quas ab non quos facilis praesentium assumenda velit, eaque voluptatum!</p>
-
-                        <h3>John Doe</h3>
+                <div id="testiSlider" class="main-content">    
+                    <div>
+                        <div class="content-1 active">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id, similique consectetur eum sunt cumque? Excepturi odio, quidem facilis provident  sequi ipsam placeat aut cupiditate, esse magnam fugit in, eligendi sunt eveniet dignissimos nostrum! Nulla sit minima, qui nisi ipsa quas ab non quos facilis praesentium assumenda velit, eaque voluptatum! nisi ipsa quas ab non quos facilis praesentium assumenda velit, eaque voluptatum!</p>
+    
+                            <h3>John Doe</h3>
+                        </div>
                     </div>
-                    <div class="content-1">
-                        <p>Facilis praesentium assumenda velit, eaque voluptatum! lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id, similique consectetur eum sunt cumque? Excepturi odio, quidem facilis provident sequi ipsam placeat aut cupiditate, esse magnam fugit in, eligendi sunt eveniet dignissimos nostrum! Nulla sit minima, qui nisi ipsa quas ab non quos eveniet dignissimos nostrum! Nulla sit minima, qui nisi ipsa quas ab non quos</p>
-
-                        <h3>Thomas Albert</h3>
+                    <div>
+                        <div class="content-1">
+                            <p>Facilis praesentium assumenda velit, eaque voluptatum! lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id, similique consectetur eum sunt cumque? Excepturi odio, quidem facilis provident sequi ipsam placeat aut cupiditate, esse magnam fugit in, eligendi sunt eveniet dignissimos nostrum! Nulla sit minima, qui nisi ipsa quas ab non quos eveniet dignissimos nostrum! Nulla sit minima, qui nisi ipsa quas ab non quos</p>
+    
+                            <h3>Thomas Albert</h3>
+                        </div>
                     </div>
-                    <div class="content-1">
-                        <p>Rovident sequi ipsam placeat aut cupiditate, lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id, similique consectetur eum sunt cumque? Excepturi odio, qui nisi ipsa quas ab non quos facilis praesentium assumenda velit, eaque voluptatum! quidem facilis esse magnam fugit in, eligendi sunt eveniet dignissimos nostrum! Nulla sit minima fugit in, eligendi sunt eveniet dignissimos nostrum! Nulla sit minima praesentium assumenda</p>
-
-                        <h3>Willson head</h3>
+                    <div>
+                        <div class="content-1">
+                            <p>Rovident sequi ipsam placeat aut cupiditate, lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id, similique consectetur eum sunt cumque? Excepturi odio, qui nisi ipsa quas ab non quos facilis praesentium assumenda velit, eaque voluptatum! quidem facilis esse magnam fugit in, eligendi sunt eveniet dignissimos nostrum! Nulla sit minima fugit in, eligendi sunt eveniet dignissimos nostrum! Nulla sit minima praesentium assumenda</p>
+    
+                            <h3>Willson head</h3>
+                        </div>
                     </div>
                 </div>
                 <div class="all-btn">
                     <div class="left-btn">
                         <i class="fa-solid fa-arrow-left"></i>
-                        Previous
                     </div>
                     <div class="right-btn">
-                        Next
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </div>
             </div>
          </section>
-        <!-- section 7 end -->
+        <!-- Testimonals Sec end -->
 
      </main>
 
@@ -325,10 +331,7 @@
         </section>
       </footer>
      <!-- footer end -->
-
      <script src="./script.js"></script>
-
-
      <!-- link AOS -->
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
      <script>
@@ -337,5 +340,21 @@
         duration:700,
        });
      </script>
+
+     <!-- link slik slider -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js" integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="./slick.min.js"></script>
+     <script>
+        $(document).ready(function(){
+        $('#testiSlider').slick({
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+      });
+     </script>
 </body>
 </html>
+<!-- a quick brown fox jumps over the lazy dog. -->
